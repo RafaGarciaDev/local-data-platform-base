@@ -17,6 +17,7 @@ O Airflow já sobe com os providers de Spark, AWS e Azure, além de `dbt-spark` 
 
 ## ▶️ Como rodar
 ```bash
+cp .env.example .env   # só na primeira vez (valores de teste/lab local)
 docker compose up -d
 ```
 Acesse o Airflow em http://localhost:8080. As DAGs ficam em `airflow/dags/` e o projeto dbt em `dbt/`.
